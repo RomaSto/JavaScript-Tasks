@@ -6,5 +6,20 @@
   Return YES, if Vasya can sell a ticket to each person and give the change. Otherwise return NO.
 */
 module.exports = function (queue) {
-  //your perfect code here
+  //total money clerk has
+  var total = 0;
+  //iterate over the array
+  for (var i = 0, len = queue.length; i < len; i++)
+  {
+    //if clerk has enough money to give change return YES
+    if (queue[i] - 25 <= total)
+    {
+      return 'YES';
+    }
+    //otherwise return NO
+    else
+    {
+      return 'NO';
+    }
+  }
 }
