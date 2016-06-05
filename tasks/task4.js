@@ -22,4 +22,4 @@ module.exports = function (queue) {
       return 'NO';
     }
   }
-}
+};
