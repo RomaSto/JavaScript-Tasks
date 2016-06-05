@@ -11,11 +11,11 @@ module.exports = function (input) {
  {
    for (var i = 0, j = 1, len = input.length; i < len; i++, j++)
    {
-     if(input[i] === input[j])
+     if(input[i] === input[j]);
      {
        input.splice(j, 1)
      }
    }
  }
  return input;
-}
+};
