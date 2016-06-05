@@ -13,7 +13,7 @@ module.exports = function (str) {
   }
   else
   {
-    for (var i = 0, len = str.length: i < len; i++)
+    for (var i = 0, len = str.length; i < len; i++)
     {
       if (str[i] === reverseStr[i])
       {
@@ -23,4 +23,4 @@ module.exports = function (str) {
     }
   }
   return palindromeLength;
-}
+};
