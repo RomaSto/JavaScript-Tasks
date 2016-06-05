@@ -35,4 +35,4 @@ module.exports = function (walkCoords) {
     //return true if arrays are equal
     return true;
   }
-}
+};
