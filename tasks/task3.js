@@ -6,16 +6,17 @@
 */
 module.exports = function (str) {
   //your perfect code here
-  var palindromeLength = 0;
-  if (str[0] === 0)
-  {
+  var palindromeLength = 1;
+  if (str[0] === 0) {
+    
     return 0;
   }
-  else
-  {
-    for (var i = 0, len = str.length; i < len; i++)
-    {
-      if (str[i] === reverseStr[i])
+  else {
+    
+    //var reverseStr = str.split('').reverse().join();
+    for (var i = 0, len = str.length; i < len; i++) {
+      
+      if (str[i] === str[i + 1])
       {
         palindromeLength =+ 1;
       }
