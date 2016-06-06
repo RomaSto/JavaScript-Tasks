@@ -9,17 +9,17 @@ module.exports = function (queue) {
   //total money clerk has
   var total = 0;
   //iterate over the array
-  for (var i = 0, len = queue.length; i < len; i++)
-  {
-    //if clerk has enough money to give change return YES
-    if (queue[i] - 25 <= total)
-    {
-      return 'YES';
+  for (var i = 0, len = queue.length; i < len; i++) {
+    //if clerk has enough money to give change
+    if (queue[i] - 25 <= total) {
+      // add money received
+      total += 25;
     }
     //otherwise return NO
-    else
-    {
+    else {
+      
       return 'NO';
     }
+    return 'YES';
   }
 };
