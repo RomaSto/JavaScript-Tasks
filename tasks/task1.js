@@ -9,14 +9,12 @@
 */
 module.exports = function (walkCoords) {
   //check if the walk will take exactly 10 m
-  if (walkCoords.length != 9)
-  {
+  if (walkCoords.length != 9) {
     return false;
   }
   
   // check if user will return to the starting point
-  else
-  {
+  else {
     // divide the array
     var away = walkCoords.slice(0, 4);
     var back = walkCoords.slice(5, 9);
@@ -24,10 +22,9 @@ module.exports = function (walkCoords) {
     away = away.sort();
     back = back.sort();
     //check if arrays are equal
-    for (var i = 0, l = away.length; i < l; i ++)
-    {
-      if (away[i] != back[i])
-      {
+    for (var i = 0, l = away.length; i < l; i ++) {
+      
+      if (away[i] != back[i]) {
         // return false if arrays are different
         return false;
       }
