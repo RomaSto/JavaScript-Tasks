@@ -9,7 +9,7 @@
 */
 module.exports = function (walkCoords) {
   //check if the walk will take exactly 10 m
-  if (walkCoords.length != 9) {
+  if (walkCoords.length !== 9) {
     return false;
   }
   
@@ -24,7 +24,7 @@ module.exports = function (walkCoords) {
     //check if arrays are equal
     for (var i = 0, l = away.length; i < l; i ++) {
       
-      if (away[i] != back[i]) {
+      if (away[i] !== back[i]) {
         // return false if arrays are different
         return false;
       }
