@@ -9,7 +9,7 @@
 */
 module.exports = function (walkCoords) {
   //check if the walk will take exactly 10 m
-  if (walkCoords.length !== 9) {
+  if (walkCoords.length !== 10) {
     return false;
   }
   
