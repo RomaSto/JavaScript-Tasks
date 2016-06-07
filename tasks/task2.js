@@ -3,19 +3,21 @@
   any elements with the same value next to each other and preserving the original order of elements.
 */
 module.exports = function (input) {
- if (Array.isArray(input) !== true) {
+ var output = [];
+   if (!Array.isArray(input)) {
    
    input = input.split('');
  }
- else {
-   var output;
-   for (var i = 0, j = 1, len = input.length; i < len; i++, j++) {
+ 
+  output[0] = input[0];
+  
+   for (var i = 0, len = input.length; i < len; i++) {
      
-     if(input[i] === input[j]) {
+     if (input[i] !== output [output.length - 1]) {
        
-      output = input.splice(j, 1);
-     }
-   }
+         output[output.length] = input[i];
+       }
+   
  }
  return output;
 };
