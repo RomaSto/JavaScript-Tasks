@@ -6,7 +6,7 @@
 */
 module.exports = function (str) {
   //your perfect code here
-  var palindromeLength = 1;
+  var palindromeLength = 0;
   if (str[0] === 0) {
     
     return 0;
@@ -15,13 +15,15 @@ module.exports = function (str) {
     
     //var reverseStr = str.split('').reverse().join();
     for (var i = 0, len = str.length; i < len; i++) {
-      
+       
       if (str[i] === str[i + 1])
       {
-        palindromeLength =+ 1;
+        console.log(str[i]);
+        palindromeLength += 2;
       }
-      
+           
     }
+    if(palindromeLength === 0) palindromeLength = 1;
   }
   return palindromeLength;
 };
